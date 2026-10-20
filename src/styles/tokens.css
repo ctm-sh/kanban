@@ -1,0 +1,36 @@
+:root {
+  /* 바탕 */
+  --bg: #fbf8f3;
+  --surface: #ffffff;
+  --sidebar-bg: #f4efe6;
+  --line: #e8e0d2;
+  --text: #2d2a26;
+  --text-muted: #8a8378;
+  --brand: #7c5cff;
+  --brand-weak: #efeaff;
+  --danger: #e5484d;
+  --warn: #f5872a;
+
+  /* 컬럼 파스텔 (순서대로 순환) */
+  --col-1: #fff1e0;
+  --col-2: #e6f4ff;
+  --col-3: #e9f8ee;
+  --col-4: #f6ecff;
+
+  /* 팀원 8색 팔레트 — src/lib/palette.ts와 순서를 맞출 것 */
+  --member-1: #f5872a;
+  --member-2: #3b82f6;
+  --member-3: #22a565;
+  --member-4: #d946ef;
+  --member-5: #ef4444;
+  --member-6: #0ea5a4;
+  --member-7: #eab308;
+  --member-8: #6366f1;
+
+  --radius-col: 12px;
+  --radius-card: 10px;
+  --shadow-card: 0 1px 2px rgba(45, 42, 38, 0.06), 0 2px 6px rgba(45, 42, 38, 0.06);
+  --sidebar-w: 220px;
+
+  --font: 'Pretendard Variable', Pretendard, -apple-system, 'Segoe UI', sans-serif;
+}
