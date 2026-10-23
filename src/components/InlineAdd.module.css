@@ -1,0 +1,30 @@
+.trigger {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: transparent;
+  color: var(--text-muted);
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.trigger:hover {
+  background: rgba(45, 42, 38, 0.05);
+  color: var(--text);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 8px;
+  background: var(--surface);
+  font-size: 13px;
+}
+
+.input:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: -1px;
+}

@@ -1,0 +1,58 @@
+.board {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-height: 100%;
+}
+
+.column {
+  flex: none;
+  width: 272px;
+  border-radius: var(--radius-col);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.columnHeader {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 2px;
+}
+
+.columnTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.doneBadge {
+  flex: none;
+  border-radius: 999px;
+  padding: 1px 7px;
+  background: rgba(34, 165, 101, 0.15);
+  color: #1b7f4e;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.count {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.empty {
+  margin: 0;
+  padding: 14px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}

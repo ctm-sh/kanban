@@ -4,44 +4,6 @@
   height: 100%;
 }
 
-.sidebar {
-  background: var(--sidebar-bg);
-  border-right: 1px solid var(--line);
-  padding: 20px 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  overflow-y: auto;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  font-weight: 800;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--brand);
-}
-
-.sectionTitle {
-  margin: 0 0 8px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--text-muted);
-}
-
-.empty {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text-muted);
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -56,10 +18,37 @@
   padding: 16px 24px;
 }
 
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
 .teamName {
   margin: 0;
   font-size: 20px;
   font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.iconButton {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.iconButton:hover {
+  background: var(--sidebar-bg);
+  color: var(--text);
 }
 
 .account {
@@ -90,6 +79,25 @@
 .signOut:hover {
   border-color: var(--danger);
   color: var(--danger);
+}
+
+.error {
+  margin: 0 24px 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fdecec;
+  color: var(--danger);
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dismiss {
+  border: 0;
+  background: transparent;
+  color: inherit;
 }
 
 .board {

@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: var(--bg);
+  font-weight: 400;
+}
+
+.field input:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: -1px;
+  background: var(--surface);
+}
+
+.primary,
+.secondary,
+.delete {
+  border: 0;
+  border-radius: 10px;
+  padding: 9px 16px;
+  font-weight: 700;
+}
+
+.primary {
+  background: var(--brand);
+  color: #fff;
+}
+
+.secondary {
+  background: var(--sidebar-bg);
+}
+
+.delete {
+  background: var(--danger);
+  color: #fff;
+}
+
+.primary:disabled,
+.secondary:disabled,
+.delete:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.danger {
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.deleteLink {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--danger);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.warning {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fdecec;
+  color: var(--danger);
+  font-size: 13px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
